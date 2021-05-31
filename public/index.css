@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
+:root {
+  --text-color-1: #222020;
+  --text-color-2: #012046;
+  --text-color-3: #464646;
+  --text-color-4: #545dd8;
+  --text-color-alert: #d10a0a;
+  --backround-color-1: #012046;
+  --backround-color-2: #ffecc2;
+  --backround-color-3: #f7f6f2;
+  --backround-color-4: #eb7500;
+  --backround-color-5: #eba800;
+  --backround-color-6: #b3ccf8;
+  --grey: #d2dae7;
+  --backround-color-alert: #f7f7f9;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 32px;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  background-color: var(--backround-color-tertiary);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 3rem;
+  position: relative;
+}
+
+.navbar ul {
+  list-style-type: none; /*to remove bullets*/
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.navbar li {
+  float: left;
+  padding: 2px;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  /* color: var(--text-color-primary) */
+  width: clamp(45ch, 50%, 75ch);
+  margin: auto;
+}
+
+h1 {
+  color: var(--text-color-1);
+  font-size: 1rem;
+}
+
+h2 {
+  color: var(--text-color-2);
+  font-size: 1rem;
+}
+
+h3 {
+  color: var(--text-color-3);
+  font-size: 1rem;
+}
+
+h4 {
+  color: var(--text-color-4);
+  font-size: 1rem;
+}
+
+h5 {
+  color: var(--text-color-alert);
+  font-size: 1rem;
+}
+
+p {
+  color: var(--text-color-primary);
+  font-size: 1rem;
+  width: clamp(45ch, 50%, 75ch);
+
+  background-position: center;
+  margin: auto;
+}
+
+.stock-grid {
+}
+
+.design-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #353535;
+  font-size: 0.8rem;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
+    rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  transition: all 500ms;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.box:nth-child(1) {
+  background-color: var(--backround-color-1);
+  color: white;
+}
+
+.box:nth-child(2) {
+  background-color: var(--backround-color-2);
+  color: var(--text-color-2);
+  font-weight: bold;
+}
+
+.box:nth-child(3) {
+  background-color: var(--backround-color-3);
+}
+
+.box:nth-child(4) {
+  background-color: var(--backround-color-4);
+}
+
+.box:nth-child(5) {
+  background-color: var(--backround-color-5);
+}
+
+.box:nth-child(6) {
+  background-color: var(--backround-color-6);
+}
+
+.box:nth-child(7) {
+  background-color: var(--backround-color-alert);
+}
+
+.box:hover {
+  box-shadow: rgba(2, 8, 20, 0.1) 0px 0.35em 1.175em,
+    rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
+  transform: translateY(-3px) scale(1.1);
+}
